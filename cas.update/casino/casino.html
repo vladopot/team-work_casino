@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roulette</title>
+    <link rel="stylesheet" href="casino.css">
+    <script src="bet_adder.js" defer></script>
+    <script src="bet_amount.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <p id="img"></p>
+        <div id="shape" onclick="change('shape')" class="shape">0</div>
+        <div class="table">
+            <div class="cell_1" id="c1" onclick="change('c1')">1</div>
+            <div class="cell" id="c2" onclick="change('c2')">2</div>
+            <div class="cell_1" id="c3" onclick="change('c3')">3</div>
+            <div class="cell" id="c4" onclick="change('c4')">4</div>
+            <div class="cell_1" id="c5" onclick="change('c5')">5</div>
+            <div class="cell" id="c6" onclick="change('c6')">6</div>
+            <div class="cell_1" id="c7" onclick="change('c7')">7</div>
+            <div class="cell" id="c8" onclick="change('c8')">8</div>
+            <div class="cell_1" id="c9" onclick="change('c9')">9</div>
+            <div class="cell" id="c10" onclick="change('c10')">10</div>
+            <div class="cell" id="c11" onclick="change('c11')">11</div>
+            <div class="cell_1" id="c12" onclick="change('c12')">12</div>
+            <div class="cell_2" id="stav" onclick="change('stav')">2 to 1</div>
+            <div class="cell" id="c13" onclick="change('c13')">13</div>
+            <div class="cell_1" id="c14" onclick="change('c14')">14</div>
+            <div class="cell" id="c15" onclick="change('c15')">15</div>
+            <div class="cell_1" id="c16" onclick="change('c16')">16</div>
+            <div class="cell" id="c17" onclick="change('c17')">17</div>
+            <div class="cell_1" id="c18" onclick="change('c18')">18</div>
+            <div class="cell_1" id="c19" onclick="change('c19')">19</div>
+            <div class="cell" id="c20" onclick="change('c20')">20</div>
+            <div class="cell_1" id="c21" onclick="change('c21')">21</div>
+            <div class="cell" id="c22" onclick="change('c22')">22</div>
+            <div class="cell_1" id="c23" onclick="change('c23')">23</div>
+            <div class="cell" id="c24" onclick="change('c24')">24</div>
+            <div class="cell_2" id="stav1" onclick="change('stav1')">2 to 1</div>
+            <div class="cell_1" id="c25" onclick="change('c25')">25</div>
+            <div class="cell" id="c26" onclick="change('c26')">26</div>
+            <div class="cell_1" id="c27" onclick="change('c27')">27</div>
+            <div class="cell" id="c28" onclick="change('c28')">28</div>
+            <div class="cell" id="c29" onclick="change('c29')">29</div>
+            <div class="cell_1" id="c30" onclick="change('c30')">30</div>
+            <div class="cell" id="c31" onclick="change('c31')">31</div>
+            <div class="cell_1" id="c32" onclick="change('c32')">32</div>
+            <div class="cell" id="c33" onclick="change('c33')">33</div>
+            <div class="cell_1" id="c34" onclick="change('c34')">34</div>
+            <div class="cell" id="c35" onclick="change('c35')">35</div>
+            <div class="cell_1" id="c36" onclick="change('c36')">36</div>
+            <div class="cell_2" id="stav2" onclick="change('stav2')">2 to 1</div>
+        </div>
+        <div class="table2">
+            <div class="cell_3" id="1st" onclick="change('1st')">1st 12</div>
+            <div class="cell_3" id="2nd" onclick="change('2nd')">2nd 12</div>
+            <div class="cell_3" id="3rd" onclick="change('3rd')">3rd 12</div>
+        </div>
+        <div class="table3">
+            <div class="cell_3" id="down1" onclick="change('down1')">1-18</div>
+            <div class="cell_3" id="down2" onclick="change('down2')">Even</div>
+            <div class="cell_3" id="down3" onclick="change('down3')">Red</div>
+            <div class="cell_3" id="down4" onclick="change('down4')">Black</div>
+            <div class="cell_3" id="down5" onclick="change('down5')">Odd</div>
+            <div class="cell_3" id="down6" onclick="change('down6')">19-36</div>
+        </div>
+        
+        <div class="betmake">
+            <input type="number" id="bet" name="bet" placeholder="bet">
+            <div class="fishka" id="f1" style="background-image: url(bet.png);" onclick="makebet(this)">100</div>
+            <div class="fishka" id="f2" style="background-image: url(bet_white.png);" onclick="makebet(this)">500</div>
+            <div class="fishka" id="f3" style="background-image: url(bet_blue.png);" onclick="makebet(this)">1000</div>
+            <div class="fishka" id="f4" style="background-image: url(bet_yellow.png);" onclick="makebet(this)">5000</div>
+            <div class="fishka" id="f5" style="background-image: url(bet_red.png);" onclick="makebet(this)">10000</div>
+        </div>
+    </div>
+</body> 
+</html>
