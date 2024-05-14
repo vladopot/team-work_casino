@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="casino.css">
     <script src="bet_adder.js" defer></script>
     <script src="bet_amount.js" defer></script>
+    <script src="spin.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
-        <p id="img"></p>
-        <div id="shape" onclick="change('shape')" class="shape">0</div>
+        <form action="./../main_page/index.html">
+            <button class="back">Powrót</button>
+        </form>
+        <div id="img">
+            <div class="countion">
+                <span class="countion_count"></span>
+            </div>
+        </div>
         <div class="table">
+            <div id="shape" onclick="change('shape')" class="shape">0</div>
             <div class="cell_1" id="c1" onclick="change('c1')">1</div>
             <div class="cell" id="c2" onclick="change('c2')">2</div>
             <div class="cell_1" id="c3" onclick="change('c3')">3</div>
@@ -68,12 +76,14 @@
         </div>
         
         <div class="betmake">
+            <button class="new_game">New Game</button>
+            <button class="spin">Spin</button>
             <input type="number" id="bet" name="bet" placeholder="bet">
-            <div class="fishka" id="f1" style="background-image: url(bet.png);" onclick="makebet(this)">100</div>
-            <div class="fishka" id="f2" style="background-image: url(bet_white.png);" onclick="makebet(this)">500</div>
-            <div class="fishka" id="f3" style="background-image: url(bet_blue.png);" onclick="makebet(this)">1000</div>
-            <div class="fishka" id="f4" style="background-image: url(bet_yellow.png);" onclick="makebet(this)">5000</div>
-            <div class="fishka" id="f5" style="background-image: url(bet_red.png);" onclick="makebet(this)">10000</div>
+            <div class="fishka" id="f1" style="background-image: url(assets/bet.png);" onclick="makebet(this)">100</div>
+            <div class="fishka" id="f2" style="background-image: url(assets/bet_white.png);" onclick="makebet(this)">500</div>
+            <div class="fishka" id="f3" style="background-image: url(assets/bet_blue.png);" onclick="makebet(this)">1000</div>
+            <div class="fishka" id="f4" style="background-image: url(assets/bet_yellow.png);" onclick="makebet(this)">5000</div>
+            <div class="fishka" id="f5" style="background-image: url(assets/bet_red.png);" onclick="makebet(this)">10000</div>
         </div>
     </div>
 </body> 
